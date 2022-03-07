@@ -47,10 +47,15 @@
 #     print(string[item])
 
 
-s='hello123 hi678'
+# s='hello123 hi678'
+# count=0
+# for char in s:
+#     if ('0'<= char <='9'):
+#         print(char,end=" "
+
+
+s='123678#$%#%^&*'
 count=0
 for char in s:
-    if '0'<= char <='9':
-        print(char,end=" ")
-
-
+    if char.isalnum():
+    print(char,end=" ")
