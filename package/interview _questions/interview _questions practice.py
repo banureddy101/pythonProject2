@@ -352,7 +352,7 @@
 # print(l,end='')
 
 #36Write a program to iterate through list and build a new dictionary, only if the items of the list has even number of characters.
-names=['apple', 'yahoo', 'google', 'gmail', 'walmart', 'flipkart', 'facebook', 'amazon']
+# names=['apple', 'yahoo', 'google', 'gmail', 'walmart', 'flipkart', 'facebook', 'amazon']
 
 # d = {}
 # for i in names:
@@ -367,7 +367,7 @@ names=['apple', 'yahoo', 'google', 'gmail', 'walmart', 'flipkart', 'facebook', '
 
 #37Squares of numbers using map
 # map is used to map a function with a iterable
-a = [1, 2, 3, 4, 5]
+# a = [1, 2, 3, 4, 5]
 # def sqr(args):
 #     return args ** 2
 # res=map(sqr,a)
@@ -398,10 +398,672 @@ a = [1, 2, 3, 4, 5]
 # for i in words[::-1]:
 #     print(list(i[::-1]))
 
-'40Write a program to update the tuple'
+'''40Write a program to update the tuple'''
 
 # t1 = (1, 2, 3, 4)
 # t2 = (100, 200, 300)
 #
 # t= t1 +t2
 # print(t)
+
+'''41Print all the numbers in the below list'''
+
+# a = ['abc', '123', 'hello', '23']
+# for i in a:
+#     if i.isnumeric():
+#         print(i)
+
+'''42 write a Program to print the number of occurrences of characters in a String without using inbuilt functions.'''
+
+s = 'helloworld'
+# d={}
+# for i in s:
+#     d[i]=s.count(i)
+# print(d)
+#
+# from collections import defaultdict
+# d=defaultdict(int)
+# for i in s:
+#     d[i]+=1
+# print(d)
+#
+# from collections import Counter
+# c=Counter(s)
+# print(c)
+
+'''43Program to print only the repeated characters and count of the same.'''
+
+# s = 'helloworld'
+# d={}
+# for i in s:
+#     if s.count(i) == 1:
+#         d[i]=s.count(i)
+# print(d)
+
+'''44Write a program to get alternate characters of a string in list format.'''
+# s = 'hello world welcome to python'
+# for i in s[::2]:
+#     print(list(i),end='')
+
+# l =[i for i in s[::2]]
+# print(l)
+
+
+'''45Write a program to get square of list of number's using lambda function '''
+# a = [1, 2, 3, 4, 5]
+# res=lambda n : n**2
+# sqr = [res(i) for i in a]
+# print(sqr)
+
+'''46Grouping anagrams'''
+# words = ['eat', 'ate', 'tea', 'hello', 'silent', 'listen']
+# from collections import defaultdict
+# d= defaultdict(list)
+# for i in words:
+#     s=''.join(sorted(i))
+#     d[s].append(i)
+# print(d)
+
+'''46 Write a list comprehension to get a list of even numbers from 1-50'''
+
+# l=[i for i in range(1,51) if i % 2 == 0]
+# print(l)
+
+
+'''s = "This is a Programming language and Programming is fun"
+# make dictionary with word and its length pair for only those words which are not repeated.'''
+
+# s = "This is a Programming language and Programming is fun"
+# l =s.split()
+# d={}
+# for i in l:
+#     if s.count(i) == 1:
+#         d[i]=len(i)
+# print(d)
+
+'''Write a program to find the duplicate elements in the list without using inbuilt functions'''
+
+# names = ['apple', 'google', 'apple', 'yahoo', 'google']
+# uniq =set(names)
+# count = 0
+# for i in uniq:
+#     if i == uniq:
+#count+ = 1
+
+'''_49 Write a program to count the number occurrences of each item in the list without using any inbuilt functions'''
+
+# names =['apple', 'google', 'apple', 'yahoo', 'google', 'facebook', 'gmail', 'yahoo']
+# d={}
+# for i in names:
+#     d[i]=names.count(i)
+# print(list(d))
+
+'''50Write a function to check if the number is Prime'''
+
+# def prime_(n):
+#     for i in range(2,n):
+#         if n % i == 0:
+#             return 'not prime'
+#         return 'prime'
+# print(prime_(4))
+
+'''51How to create a tuple using range function'''
+# a=tuple(range(10))
+# print(a)
+
+'''52Write a program to find the largest number in the list without using any inbuilt functions'''
+# numbers = [10, 20, 30, 40, 50]
+# largest=0
+# for i in numbers:
+#     if i > largest:
+#         largest == i
+# print(i)
+
+'''53Write a method that returns the last digit of an integer. For example, the call of get_last_digit(3572) should return 2.
+'''
+# def last_(n):
+#     return str(n)[-1]
+# print(last_(12345))
+
+# def last_(n):
+#     return n%10
+# print(last_(1234))
+
+'''54Write a program to find most common words in a given list.'''
+# words = ['look', 'into', 'my', 'eyes', 'look', 'into', 'my', 'eyes','the', 'eyes', 'the', 'eyes', 'the', 'eyes', 'not', 'around', 'the', 'eyes', "don't", 'look', 'around', 'the',
+# 'eyes', 'look', 'into','my', 'eyes', "you're", 'under']
+
+from collections import Counter
+# a=[]
+# c=Counter(words)
+# a.append(c)
+# print(a)
+
+# from collections import defaultdict
+# d=defaultdict(int)
+# for i in words:
+#     d[i]+=1
+# print(d)
+
+
+'''55Make a function named tail that takes a sequence (like a list, string, or tuple) and a number n and returns the last n elements from the given sequence, as a list.'''
+# def tail_(sequence,n):
+#     return sequence,[-n]
+# print(tail_('hello',2))
+
+'''56Write function named is_perfect_square that accepts a number and returns True if it's a perfect square and False if it's not.'''
+
+# def sqr(n):
+#     for i in range(n):
+#         if i ** 2 == n:
+#             return True
+#         return False
+# print(sqr(4))
+
+'''57Write a program to get all the duplicate items and the number of times the item is repeated in the list.'''
+# names = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'facebook', 'apple', 'gmail', 'gmail', 'gmail', 'gmail']
+# d={}
+# for i in names:
+#     if names.count(i)>1:
+#         d[i]=names.count(i)
+# print(d)
+
+'''58Write a program to print all numeric values in a list'''
+
+# items = ['apple', 1.2, 'google', '12.6', 26, '100']
+#
+# for i in items:
+#     if isinstance(i,(int,float)):
+#         print(i)
+
+'''59Triangle Patterns'''
+
+# Left Justified Triangle
+
+'''for i in range(1,6):
+    print(f"{'*'*i:<5}")
+
+ # Right Justified Triangle
+
+for i in range(1,6):
+    print(f"{'*'*i:>5}")
+
+# Equilateral Triangle
+
+for i in range(1,6):
+    print(f"{'* '*i:^12}")
+
+# Inverted Triangles (Left Justified)
+
+for i in range(6,0,-1):
+    print(f"{'*'*i:<6}")
+
+# Inverted Triangles (Right Justified)
+
+for i in range(6,0,-1):
+    print(f"{'*'*i:>6}")
+
+# Inverted Triangles(Centre)
+
+for i in range(6,0,-1):
+    print(f"{'* '*i:^12}")
+
+'Number Pattern in triangle (Left Justified)'
+pat=''
+for i in range(1,6):
+    pat+=str(i)
+    print(f"{pat:<5}")
+# Number Pattern in triangle (Right Justified)
+pat=''
+for i in range(1,6):
+    pat+=str(i)
+    print(f'{pat:>5}')
+
+# Number Pattern in triangle (Centre)
+
+pat=''
+for i in range(1,6):
+    pat=pat + ' ' + str(i)
+print(f'{pat:^10}')'''
+
+
+'''59Write a program to rotate items of the list'''
+# names = ["apple", "google", "yahoo", "gmail", "facebook", "flipkart", "amazon"]
+# from collections import deque
+# def rotate_(rotate,n):
+#     d=deque(rotate)
+#     d.rotate(n)
+#     return list(d)
+# print(rotate_(names,1))
+# print(rotate_(names,2))
+
+'''60Write a program to count the number of white spaces in a given string'''
+# import re
+#
+# sentence = """Hello world welcome to Python Hi  How are you. Hi how are you"""
+# ws=re.findall(f"\s",sentence)
+# print(len(ws))
+
+'''61 Write a program to print only non-repeated characters in a string'''
+#
+# s = 'helloworld'
+# count=0
+# for i in s:
+#     if s.count(i) == 1:
+#         count+=1
+# print((count),end='')
+
+'''62 Write a program to print all the consonants in a given string'''
+#
+# s = 'helloworld'
+# for i in s:
+#     if not i.lower() in 'aeiou':
+#         print(i,end='')
+
+'''63 Write a program to check if the year is leap year or not'''
+# import calendar
+# print(calendar.isleap(2016))
+
+'''64 Write a program to count no of capital letters in a string'''
+# import re
+# sentence = "Hi How are You WelCome to PytHon"
+# CL=re.findall(f'[A-z]',sentence)
+# print(len(CL))
+
+'''65 Write a program to get the below output'''
+# for i in range(1,5):
+#     print('* '*1)
+#     j=i+1
+#     print('* '*j)
+# print(i)
+
+'''66Write a program to get the below output'''
+'''[1, 2]
+    [3, 4]
+    [5, 6]
+    [7, 8]
+    [9]'''
+
+# a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# for i in range(0,len(a),2):
+#     print(a[i:i+2])
+
+
+
+'''67 Write a program to find the first repeating character in a string'''
+
+# s = 'helloworld'
+# for i in s:
+#     if s.count(i)!=1:
+#         print(i,end='')
+#         break
+
+'''68 Write a program to find the first non repeating character in a string'''
+
+# s = 'helloworld'
+# for i in s:
+#     if s.count(i)==1:
+#         print(i,end='')
+#         break
+
+'''69 Write a program to find the index of nth occurrence of a sub-string in a string'''
+#
+# sentence = "hello world welcome to python hello hi how are you hello there"
+#
+# l=sentence.split()
+# for index,item,in enumerate(l):
+#     print(index,item,end='')
+
+'''70 Write a program to print prime numbers from 1 to 50'''
+# for n in range(1,50):
+#     if n > 1:
+#         for i in range(2,n):
+#             if n % i == 0:
+#                 break
+#             else:
+#                 print(n,end=',')
+
+
+'''71 Write a program to sort a list which has mix of both odd and even numbers, the sorted list should have odd numbers first and then even numbers in sorted order'''
+# a = [3, 4, 1, 7, 2, 12, 8, 6, 9, 11]
+#
+# even_= [i for i in a if i % 2 == 0]
+# odd_ = [i for i in a if i % 2 != 0]
+# # print(odd_)
+# # print(even_)
+# c=[*odd_,*even_]
+# print(c)
+'op=[3, 1, 7, 9, 11, 4, 2, 12, 8, 6] '
+
+'''72rite a program to sort a list which has mix of both odd and even numbers, in the sorted list, odd numbers should be in ascending order and even numbers should be in descending order'''
+
+# a = [3, 4, 1, 7, 2, 12, 8, 6, 9, 11]
+# even_=[i for i in a if i % 2 == 0]
+# odd_ =[i for i in a if i % 2 != 0]
+# # print(even_)
+# s=even_.sort(reverse=True)
+# print(s)
+# print(odd_)
+# a=odd_+s
+# print(a)
+
+'''73Write a program to count the number of occurrences of non-special characters in a given string'''
+
+a = 'hello@world! welcome!!! Python$ hi how are you & where are you?'
+
+# from collections import defaultdict
+# d=defaultdict(int)
+# for i in a:
+#     if i.isalnum():
+#         d[i] += 1
+# print(d,end='')
+
+# op=efaultdict(<class 'int'>, {'h': 5, 'e': 7, 'l': 4, 'o': 7, 'w': 4, 'r': 4, 'd': 1, 'c': 1, 'm': 1, 'P': 1, 'y': 3, 't': 1, 'n': 1, 'i': 1, 'a': 2, 'u': 2})
+# Process finishe
+
+'''74Grouping Flowers and Animals in the below list'''
+
+# items = ['lotus-flower', 'lilly-flower', 'cat-animal', 'sunflower-flower', 'dog-animal']
+
+# from collections import defaultdict
+# d=defaultdict(list)
+# for item_ in items:
+#     item_,group = item_.split('-')
+#     d[group].append(item_)
+# print(d)
+# op=defaultdict(<class 'list'>, {'flower': ['lotus', 'lilly', 'sunflower'], 'animal': ['cat', 'dog']})
+
+'''75 Grouping files with same extensions'''
+
+# files = ['apple.txt', 'yahoo.pdf', 'gmail.pdf', 'google.txt', 'amazon.pdf', 'facebook.txt', 'flipkart.pdf']
+#
+# for file in files:
+#     a=file.split('.')
+#     print(a[-1],end=',')
+#
+#     op=txt,pdf,pdf,txt,pdf,txt,pdf,
+
+
+'''Filter only those characters except digits'''
+
+# sen = '@hello12world34welcome!123'
+import re
+# op = re.findall(r'\D', sen)
+# print(op)
+#
+# OP=['@', 'h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd', 'w', 'e', 'l', 'c', 'o', 'm', 'e', '!']
+
+'''Count number of words in a sentence. ignore special characters.'''
+
+# sentence = "Hi there! How are you:) How are you doing today!"
+# op = re.findall(r'\w+',sentence)
+# print(op)
+# from collections import defaultdict
+# d = defaultdict(int)
+# for i in op:
+#     d[i] += 1
+# print(d)
+#
+# op=['Hi', 'there', 'How', 'are', 'you', 'How', 'are', 'you', 'doing', 'today']
+# defaultdict(<class 'int'>, {'Hi': 1, 'there': 1, 'How': 2, 'are': 2, 'you': 2, 'doing': 1, 'today': 1})
+
+
+'''102 Grouping even and odd numbers'''
+#
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# from collections import defaultdict
+# d = defaultdict(list)
+# for i in numbers:
+#     if i % 2 == 0:
+#         d[0].append(i)
+#     else:
+#         d[1].append(i)
+# print(d)
+#
+# op=defaultdict(<class 'list'>, {1: [1, 3, 5, 7, 9], 0: [2, 4, 6, 8, 10]})
+
+
+''' Find all max numbers from the below list'''
+
+# numbers = [1, 2, 3, 0, 4, 3, 2, 4, 2, 1, 0, 4]
+#
+# mn = max(numbers)
+# amn = [i for i in numbers if i == mn]
+# print(amn)
+#
+# op = [4, 4, 4]
+
+'''Can we override a static method in python?'''
+#
+# class parent():
+#     @staticmethod
+#     def spam():
+#         print("running parent")
+# class child(parent):
+#     def spam():
+#         print('running child')
+#
+# # c=child()
+# a=c.spam()
+# print(a)
+
+
+'''Replace whitespaces with newline character in the below string'''
+
+# sentence = "Hello world welcome to python"
+# op = re.sub(r'\s','\n',sentence)
+# print(op,end='')
+#
+# op=Hello
+# world
+# welcome
+# to
+# python
+
+'''Replace all vowels with "*"'''
+#
+# sentence = "hello world welcome to python"
+#
+# op = re.sub(r'[aeiou]','*',sentence)
+# print(op)
+#
+# op=h*ll* w*rld w*lc*m* t* pyth*n
+
+
+
+'''Maximum sum of 3 numbers and Minimum sum of 3 numbers'''
+
+# numbers = [10, 15, 20, 25, 30, 35, 40, 15, 15]
+#
+# sn = sorted(numbers)
+# print(sn)
+# ms3=sorted(sn[-3:])
+# print(ms3)
+# mis3 = sorted(sn[:3])
+# print(mis3)
+#
+# op= [10, 15, 15, 15, 20, 25, 30, 35, 40]
+# [30, 35, 40]
+# [10, 15, 15]
+
+''' Write a program to get the output as below'''
+
+# sen= "python@#$%pool"
+# # o/p should be ['PYTHON', 'POOL']
+#
+# op = re.findall(r'\w+',sen)
+# print(op)
+# con_up = [i.upper() for i in op]
+# print(con_up)
+#
+# op= ['python', 'pool']
+# ['PYTHON', 'POOL']
+
+'''Write a program to print all the number which are ending with 5'''
+#
+# numbers = ['1', '12', '123', '12345', '125', '905', '55', '5', '95655', '55555']
+# for number in numbers:
+#     op = re.findall(r'5$',number)
+#     if op:
+#         print(number)
+#
+#         op=12345
+# 125
+# 905
+# 55
+# 5
+# 95655
+# 55555
+
+'''Write a program to print all the number which are starting with 8'''
+
+# numbers = ['857', '987', '8', '120', '888888', '547', '7674', '89', '589', '388888', '2889']
+# for i in numbers:
+#     op=re.findall(r'^8',i)
+#     if op:
+#         print(i)
+#
+#         op=857
+# 8
+# 888888
+# 89
+
+'''Write a program to get the indexes of each item in the below list'''
+
+# names = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'google', 'gmail', 'gmail', 'gmail']
+# # output should be -  {'apple': [0, 2], 'google': [1, 5], 'yahoo': [3, 4], 'gmail': [6, 7, 8]}
+# from collections import defaultdict
+# d = defaultdict(list)
+# for index,item in enumerate(names):
+#     d[item].append(index)
+# print(d)
+#
+# op=defaultdict(<class 'list'>, {'apple': [0, 2], 'google': [1, 5], 'yahoo': [3, 4], 'gmail': [6, 7, 8]})
+
+
+'''Write a program to print "Bangalore" 10 times without using "for" loop'''
+
+# b=('Bangalore'*10)
+# print(b)
+#  op=BangaloreBangaloreBangaloreBangaloreBangaloreBangaloreBangaloreBangaloreBangaloreBangalore
+
+''' Write a program to print all the words which starts with letter 'h' in the given string'''
+
+# sen='hello world hi hello universe how are you happy birthday'
+# op = re.findall( r'\bh\w+', sen)
+# print(op)
+#
+# op=['hello', 'hi', 'hello', 'how', 'happy']
+
+
+''' Write a program to sum all even numbers in the given string'''
+
+# sentence = 'hello 123 world 567 welcome to 9724 python'
+#
+# op =re.findall(r'\d',sentence)
+# print(op)
+# a=[int(i)for i in op]
+# print(a)
+# even_=[i for i in a if i % 2 == 0]
+# print(sum(even_))
+
+# op=['1', '2', '3', '5', '6', '7', '9', '7', '2', '4']
+# [1, 2, 3, 5, 6, 7, 9, 7, 2, 4]
+# 14
+
+'''Write a program to filter out even and odd numbers in the given string'''
+# sentence = 'hello 123 world 456 welcome to python498675634'
+# c = re.findall(r'\d',sentence)
+# print(c)
+# even_=[i for i in c if int(i) % 2 == 0]
+# odd_=[i for i in c if int(i) % 2 != 0]
+# print(even_)
+# print(odd_)
+#
+# op=['1', '2', '3', '4', '5', '6', '4', '9', '8', '6', '7', '5', '6', '3', '4']
+# ['2', '4', '6', '4', '8', '6', '6', '4']
+# ['1', '3', '5', '9', '7', '5', '3']
+
+'''Write a program to remove duplicates from the list without using set or empty list'''
+
+# l1 = [1, 2, 3, 4, 1, 2, 3, 4, 3, 4, 4]
+# l2 = l1.copy()
+# for i in l2:
+#     if l1.count(i) > 1:
+#         l1.remove(i)
+# print(l1)
+#
+# u = []
+# for i in l1:
+#     if i not in u:
+#         u.append(i)
+#         print(i,end='')
+#
+# a = list(set(l1))
+# print(a)
+
+
+'''Print all the missing numbers from 1 to 10 in the below list'''
+#
+# numbers = [1, 3, 6, 8, 10]
+# for i in range(1,11):
+#     if not i in numbers:
+#         print(i,end='')
+# op=24579
+
+'''Write a python program to get the below output'''
+# i1 = [1, 2, 3]
+# i2 = ['a', 'b', 'c']
+# '''o/p ['1a', '1b', '1c', '2a', '2b', '2c', '3a', '3b', '3c']'''
+#
+# RESULT = ["".join((str(x),y))for x in i1 for y in i2]
+# print(RESULT)
+#
+# op=['1a', '1b', '1c', '2a', '2b', '2c', '3a', '3b', '3c']
+
+'''What is the output of the below function call'''
+
+# class demo():
+#
+#     def spam(self):
+#         print('hello')
+#     def spam(self):
+#         print('python')
+#
+# d = demo()
+# print(d.spam())
+
+# op= python
+
+'''In the list below, find all the number pairs which results in 10 either when added or subtracted'''
+#
+# a = [3, 5, -4, 8, 11, 1, -1, 6]
+# for i1 in a:
+#     for i2 in a:
+#         if i1 != i2:
+#             if i1 + i2 == 10:
+#                 print((i1,i2))
+# op=(11, -1)
+# (-1, 11)
+
+'''Write a decorator to prefix +91 to the original phone numbers'''
+
+numbers = [1234567890, 123456790, 1234567890]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
