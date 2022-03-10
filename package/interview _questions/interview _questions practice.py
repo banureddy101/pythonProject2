@@ -1,4 +1,4 @@
-# 1Write a program to find the length of the string without using inbuilt function (len)#
+'''1Write a program to find the length of the string without using inbuilt function (len)'''
 
 
 # def _len(itrable):
@@ -8,7 +8,7 @@
 #     return count
 #print(_len('hello'))
 
-#2Write a program to reverse a string without using any inbuilt functions.#
+'''2Write a program to reverse a string without using any inbuilt functions'''
 
 # s='hello pyhton'
 #for item in range(len(s)-1,-1,-1):
@@ -35,13 +35,13 @@
 # print(reverse('Hello world'))
 
 
-#3. Write a program to replace one string with another. e.g. "Hello World" replace "World" with "Universe".#
-#
+'''3. Write a program to replace one string with another. e.g. "Hello World" replace "World" with "Universe".'''
+
 # s="Hello world "
 # a=s.replace('world','Universe')
 # print(a)
 
-#4. How to convert a string to a list and vice-versa.#
+'''4. How to convert a string to a list and vice-versa.'''
 
 # def con_to_str(any_list):
 #     return "".join(any_list)
@@ -51,24 +51,24 @@
 #     return any_str.split()
 # print(con_to_list('hello'))
 
-#5. Covert the string "Hello welcome to Python" to a comma separated string.#
+'''5. Covert the string "Hello welcome to Python" to a comma separated string.'''
 
 # str_="hello welcome to python"
 # res=str_.split()
 # print(res)
 
-# #6Write a program to print alternate characters in a string.#
+'''6Write a program to print alternate characters in a string.'''
 #
 # s='hello python'
 # print(s[::2])
 
-#7Write a Program to print ascii values of the characters present in a string.
-#
+'''7Write a Program to print ascii values of the characters present in a string'''
+
 # s='hello pyhton'
 # for i in s:
 #     print(ord(i),end=" ")
 
-#8write program to convert upper case to lower case and vice-versa without using inbuilt method.#
+'''8write program to convert upper case to lower case and vice-versa without using inbuilt method'''
 
 # char='HELLO WORLD'
 #
@@ -79,14 +79,14 @@
 #         print(f'{char} is upper char',end='')
 
 
-#9. Write program to swap two numbers without using 3rd variable.#
+'''9. Write program to swap two numbers without using 3rd variable.'''
 # a=10
 # b=20
 # b,a=a,b
 # print(a)
 # print(b)
 
-#10. Write program to merge two different lists.#
+'''10. Write program to merge two different lists.'''
 
 # a=[1,2,3]
 # b=[4,5,6]
@@ -94,7 +94,7 @@
 # print(c)
 # print(a+b)
 
-#11 Write a program to check if the given string is Palindrome or not without using reversed method#
+'''11 Write a program to check if the given string is Palindrome or not without using reversed method'''
 # def _palindrome(iterable):
 #     rev_itr=iterable[::-1]
 #     if iterable==rev_itr:
@@ -103,7 +103,7 @@
 #         return False
 # print(_palindrome("hiai"))
 
-#12 Write a program to search for a character in a given string and return the corresponding index.#
+'''12 Write a program to search for a character in a given string and return the corresponding index.'''
 #
 # def search_char(string,key):
 #     for index,item in enumerate(string):
@@ -111,8 +111,8 @@
 #             return f'char is {item} at index is{index}'
 # print(search_char('hello world','d'))
 
-#13 Write a program to get the below output#
-#
+'''13 Write a program to get the below output'''
+
 # sentence = "hello world welcome to python programming hi there"
 # # d = {'h': ['hello', 'hi'], 'w': ['world', 'welcome'], 't': ['to', 'there'], 'p': ['python', 'programming'] }
 # from collections import defaultdict
@@ -121,7 +121,7 @@
 # for i in s:
 #     d[i[0]].append(i)
 # print(d)
-#14 write a decorator that returns only positive values of subtraction#
+'''14 write a decorator that returns only positive values of subtraction'''
 # def Decorator_(func):
 #     def wrapper(*args,**kwargs):
 #         result=func(*args,**kwargs)
@@ -133,7 +133,7 @@
 # print(add_(4,8))
 
 
-#15 How to get the count of number of instances of a class that is being created.#
+'''15 How to get the count of number of instances of a class that is being created.'''
 
 # class Login:
 #     login_count = 0
@@ -145,7 +145,7 @@
 # a2= Login()
 # print(Login.login_count)
 
-#16Write a function which takes a list of strings and integers.If the item is a string it should print as is and if the item is integer of float it should reverse it.
+'''16Write a function which takes a list of strings and integers.If the item is a string it should print as is and if the item is integer of float it should reverse it.'''
 
 # s=['banu','hello',1,2,3,12.4,12,6,'123']
 # for i in s:
@@ -154,7 +154,7 @@
 #     else:
 #         print(str(i)[::-1])
 
-#17 Write a python program to get the below output#
+'''#17 Write a python program to get the below output#'''
 
 # sentence = "Hi How are you"
 # #o/p should be "iH woH era uoy"#
@@ -163,7 +163,7 @@
 # a=[i[::-1]for i in s]
 # print(a)
 
-# 18Write a python program to get the below output#
+'''# 18Write a python program to get the below output#'''
 # sentence = "Hi How are you"
 # # o/p should be "ouy era woH iH"
 # for item in range(len(sentence)-1,-1,-1):
@@ -171,7 +171,7 @@
 
 
 
-#19 Write a lambda function to add two numbers (a, b)#
+'''#19 Write a lambda function to add two numbers (a, b)#'''
 
 
 # res=lambda a,b:a+b
@@ -179,7 +179,7 @@
 
 
 
-#20 What is the output of the following#
+'''#20 What is the output of the following#'''
 
 # a = [1, 2, 3]
 # b = [4, 5, 6]
@@ -189,7 +189,7 @@
 
 
 
-#21How to remove duplicates from the list without using inbuilt functions
+'''#21How to remove duplicates from the list without using inbuilt functions'''
 #
 # items = [1, 2, 3, 4, 1, 2, 3, 4, 5]
 # unique=[]
@@ -199,21 +199,21 @@
 # print(unique)
 
 
-#22Find the longest word in the sentence#
+'''#22Find the longest word in the sentence#'''
 
 # sentence = "Hello world welcome to Python"
 # s=sentence.split()
 # max (s,key=len)
 # print(max)
 
-#
+
 # smallest,*rest,longest=sorted(s,key=len)
 # op=(smallest)
 # print(len(op))
 
 
 
-#23 write a program to reverse the values in the dictionary if the value is of type String
+'''#23 write a program to reverse the values in the dictionary if the value is of type String'''
 
 # d = {'a': 'hello', 'b': 100, 'c': 10.1, 'd': 'world'}
 # for key,value in d.items():
@@ -222,7 +222,7 @@
 #         print(d)
 
 
-#24How to get the elements that are in list b but not in list a
+'''#24How to get the elements that are in list b but not in list a'''
 
 # a = [1, 2, 3] b = [1, 2, 3, 4]
 # a=[1,2,3]
@@ -234,7 +234,7 @@
 # print(b-a)
 
 
-#25 A function takes variable number of positional arguments as input.
+'''#25 A function takes variable number of positional arguments as input.'''
 #howto check if the arguments that are passed are more than 5
 # def spam(*args):
 #     if len(*args)>5:
@@ -244,14 +244,14 @@
 #
 # print(spam('1,2,3,4,5,6'))
 
-#26Write a function to reverse any iterable without using reverse function
+'''#26Write a function to reverse any iterable without using reverse function'''
 
 # def reverse_(args):
 #     for i in args[::-1]:
 #         print(i,end='')
 # reverse_('hello')
 
-#27 Write a function to print the below output.
+'''#27 Write a function to print the below output.'''
 
 # func("TRACXN", 0)  # Should print RCN
 # func("TRACXN", 1)  # Should print TAX#
@@ -784,7 +784,7 @@ a = 'hello@world! welcome!!! Python$ hi how are you & where are you?'
 #     op=txt,pdf,pdf,txt,pdf,txt,pdf,
 
 
-'''Filter only those characters except digits'''
+'''76 Filter only those characters except digits'''
 
 # sen = '@hello12world34welcome!123'
 import re
@@ -793,7 +793,7 @@ import re
 #
 # OP=['@', 'h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd', 'w', 'e', 'l', 'c', 'o', 'm', 'e', '!']
 
-'''Count number of words in a sentence. ignore special characters.'''
+'''78Count number of words in a sentence. ignore special characters.'''
 
 # sentence = "Hi there! How are you:) How are you doing today!"
 # op = re.findall(r'\w+',sentence)
@@ -808,7 +808,7 @@ import re
 # defaultdict(<class 'int'>, {'Hi': 1, 'there': 1, 'How': 2, 'are': 2, 'you': 2, 'doing': 1, 'today': 1})
 
 
-'''102 Grouping even and odd numbers'''
+'''79 Grouping even and odd numbers'''
 #
 # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # from collections import defaultdict
@@ -823,7 +823,7 @@ import re
 # op=defaultdict(<class 'list'>, {1: [1, 3, 5, 7, 9], 0: [2, 4, 6, 8, 10]})
 
 
-''' Find all max numbers from the below list'''
+''' 80 Find all max numbers from the below list'''
 
 # numbers = [1, 2, 3, 0, 4, 3, 2, 4, 2, 1, 0, 4]
 #
@@ -833,7 +833,7 @@ import re
 #
 # op = [4, 4, 4]
 
-'''Can we override a static method in python?'''
+'''81 Can we override a static method in python?'''
 #
 # class parent():
 #     @staticmethod
@@ -848,7 +848,7 @@ import re
 # print(a)
 
 
-'''Replace whitespaces with newline character in the below string'''
+'''82 Replace whitespaces with newline character in the below string'''
 
 # sentence = "Hello world welcome to python"
 # op = re.sub(r'\s','\n',sentence)
@@ -860,7 +860,7 @@ import re
 # to
 # python
 
-'''Replace all vowels with "*"'''
+'''83 Replace all vowels with "*"'''
 #
 # sentence = "hello world welcome to python"
 #
@@ -871,7 +871,7 @@ import re
 
 
 
-'''Maximum sum of 3 numbers and Minimum sum of 3 numbers'''
+'''84 Maximum sum of 3 numbers and Minimum sum of 3 numbers'''
 
 # numbers = [10, 15, 20, 25, 30, 35, 40, 15, 15]
 #
@@ -886,7 +886,7 @@ import re
 # [30, 35, 40]
 # [10, 15, 15]
 
-''' Write a program to get the output as below'''
+''' 85 Write a program to get the output as below'''
 
 # sen= "python@#$%pool"
 # # o/p should be ['PYTHON', 'POOL']
@@ -899,7 +899,7 @@ import re
 # op= ['python', 'pool']
 # ['PYTHON', 'POOL']
 
-'''Write a program to print all the number which are ending with 5'''
+'''86 Write a program to print all the number which are ending with 5'''
 #
 # numbers = ['1', '12', '123', '12345', '125', '905', '55', '5', '95655', '55555']
 # for number in numbers:
@@ -915,7 +915,7 @@ import re
 # 95655
 # 55555
 
-'''Write a program to print all the number which are starting with 8'''
+'''87 Write a program to print all the number which are starting with 8'''
 
 # numbers = ['857', '987', '8', '120', '888888', '547', '7674', '89', '589', '388888', '2889']
 # for i in numbers:
@@ -928,7 +928,7 @@ import re
 # 888888
 # 89
 
-'''Write a program to get the indexes of each item in the below list'''
+'''88 Write a program to get the indexes of each item in the below list'''
 
 # names = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'google', 'gmail', 'gmail', 'gmail']
 # # output should be -  {'apple': [0, 2], 'google': [1, 5], 'yahoo': [3, 4], 'gmail': [6, 7, 8]}
@@ -941,13 +941,13 @@ import re
 # op=defaultdict(<class 'list'>, {'apple': [0, 2], 'google': [1, 5], 'yahoo': [3, 4], 'gmail': [6, 7, 8]})
 
 
-'''Write a program to print "Bangalore" 10 times without using "for" loop'''
+'''89 Write a program to print "Bangalore" 10 times without using "for" loop'''
 
 # b=('Bangalore'*10)
 # print(b)
 #  op=BangaloreBangaloreBangaloreBangaloreBangaloreBangaloreBangaloreBangaloreBangaloreBangalore
 
-''' Write a program to print all the words which starts with letter 'h' in the given string'''
+''' 90 Write a program to print all the words which starts with letter 'h' in the given string'''
 
 # sen='hello world hi hello universe how are you happy birthday'
 # op = re.findall( r'\bh\w+', sen)
@@ -956,7 +956,7 @@ import re
 # op=['hello', 'hi', 'hello', 'how', 'happy']
 
 
-''' Write a program to sum all even numbers in the given string'''
+''' 91 Write a program to sum all even numbers in the given string'''
 
 # sentence = 'hello 123 world 567 welcome to 9724 python'
 #
@@ -971,7 +971,7 @@ import re
 # [1, 2, 3, 5, 6, 7, 9, 7, 2, 4]
 # 14
 
-'''Write a program to filter out even and odd numbers in the given string'''
+'''92 Write a program to filter out even and odd numbers in the given string'''
 # sentence = 'hello 123 world 456 welcome to python498675634'
 # c = re.findall(r'\d',sentence)
 # print(c)
@@ -984,7 +984,7 @@ import re
 # ['2', '4', '6', '4', '8', '6', '6', '4']
 # ['1', '3', '5', '9', '7', '5', '3']
 
-'''Write a program to remove duplicates from the list without using set or empty list'''
+'''93 Write a program to remove duplicates from the list without using set or empty list'''
 
 # l1 = [1, 2, 3, 4, 1, 2, 3, 4, 3, 4, 4]
 # l2 = l1.copy()
@@ -1003,7 +1003,7 @@ import re
 # print(a)
 
 
-'''Print all the missing numbers from 1 to 10 in the below list'''
+'''94 Print all the missing numbers from 1 to 10 in the below list'''
 #
 # numbers = [1, 3, 6, 8, 10]
 # for i in range(1,11):
@@ -1011,7 +1011,7 @@ import re
 #         print(i,end='')
 # op=24579
 
-'''Write a python program to get the below output'''
+'''95 Write a python program to get the below output'''
 # i1 = [1, 2, 3]
 # i2 = ['a', 'b', 'c']
 # '''o/p ['1a', '1b', '1c', '2a', '2b', '2c', '3a', '3b', '3c']'''
@@ -1021,7 +1021,7 @@ import re
 #
 # op=['1a', '1b', '1c', '2a', '2b', '2c', '3a', '3b', '3c']
 
-'''What is the output of the below function call'''
+'''96 What is the output of the below function call'''
 
 # class demo():
 #
@@ -1035,7 +1035,7 @@ import re
 
 # op= python
 
-'''In the list below, find all the number pairs which results in 10 either when added or subtracted'''
+'''97 In the list below, find all the number pairs which results in 10 either when added or subtracted'''
 #
 # a = [3, 5, -4, 8, 11, 1, -1, 6]
 # for i1 in a:
@@ -1046,19 +1046,124 @@ import re
 # op=(11, -1)
 # (-1, 11)
 
-'''Write a decorator to prefix +91 to the original phone numbers'''
+'''98 Write a decorator to prefix +91 to the original phone numbers'''
 
-numbers = [1234567890, 123456790, 1234567890]
+# numbers = [1234567890, 123456790, 1234567890]
+# def pref_num(func):
+#     def wrapper(*args,**kwargs):
+#         numbers, = args
+#         pre_Num = ["+91-" + str(number)for number in numbers]
+#         return func(pre_Num)
+#     return wrapper
+#
+# @pref_num
+# def spam(numbers):
+#     for number in numbers:
+#         print(number)
+
+
+        # def prefix_country_code(func):
+        #     def wrapper(*args, **kwargs):
+        #         numbers, = args
+        #         prefix_numbers = ["+91-" + str(number) for number in numbers]
+        #         return func(prefix_numbers)
+        #
+        #     return wrapper
+
+
+'''99 Write a program to get the below output'''
+
+# d = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5}
+# # o/p should be ['b', 'd']'''
+# keys=list(d.keys())
+# a =[key for key in keys[1::2]]
+# print(a)
+
+'''100 Can we have multiple init methods in a class'''
+# class point:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+#
+#     def __init__(self, a, b, c):
+#         self.a = a
+#         self.b = b
+#         self.c = c
+#
+#
+# p = point(1,2,3)
+# print(p.c)
+#
+# p=point(4,5)
+# print(p.a)
+
+'''101 Write a program count the occurrence of a particular word in the file'''
+# from collections import defaultdict
+# d = defaultdict(int)
+# with open(r'C:\Users\pc\PycharmProjects\pythonProject2\package\interview _questions\sample.txt') as file:
+#     for line in file:
+#         for word in line.split():
+#             d[word] += 1
+# print(d)
 
 
 
+# def count_words(word):
+#     _count = 0
+#     with open(r'C:\Users\pc\PycharmProjects\pythonProject2\package\interview _questions\sample.txt') as f:
+#         for line in f:
+#             _count += line.count(word)
+#     return _count
+# print(count_words())
+path=r'C:\Users\pc\PycharmProjects\pythonProject2\package\interview _questions\sample.txt'
+'''102 Write a program to count the number of occurrences of vowels in a file.'''
+# with open(path) as file:
+#     # count=0
+#     for line in file:
+#         if line.strip():
+#
+#             for word in line.split():
+#                 count = 0
+#                 for item in word:
+#                     if item.lower() in 'aeiou':
+#                         count +=1
+#                     print(count,end=',')
+
+from collections import defaultdict
+d = defaultdict(int)
+with open(path) as file:
+    for line in file:
+        for word in line.split():
+            for item in word:
+                if item.lower() in 'aeiou':
+                    d[item] += 1
+print(d)
 
 
+''' 103 Write a program to count the number of occurrences of each word in a file.'''
 
+# from collections import defaultdict
+# d = defaultdict(int)
+# with open(path) as file:
+#     for line in file:
+#         for word in line.split():
+#             d[word] += 1
+# print(d)
 
+'''104 write a program to count the number of white spaces in a file.'''
+# with open(path) as file:
+#     count=0
+#     for line in file:
+#         spaces = line.count(" ")
+#         count += spaces
+# print(count)
 
-
-
+'''105 Count number of lines in a file without loading the file to the memory'''
+# with open(path) as file:
+#     count = 0
+#     for line in file:
+#         count += 1
+#         print(count,end='')
 
 
 

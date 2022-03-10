@@ -24,7 +24,8 @@
 #     print("the iterable not empt")
 # else:
 #     print('the iterable is empty')
-
+from selenium.webdriver.remote.webelement import WebElement
+from selenium.webdriver.support.expected_conditions import visibility_of_element_located
 
 a=10
 # b=15
@@ -129,8 +130,41 @@ names=['johns','hello','apple']
 # lines=len_file()
 # print(lines)
 
-
-d={}
-
+from selenium import webdriver
+# class _visibility_of_element_located(visibility_of_element_located):
+#     def __call__(self,driver):
+#         result=super().__call__(driver)
+#         if isinstance(result,WebElement):
+#             return result.is_enabled()
+#         else:
+#             return False
+#
+# def wait(func):
+#     def wrapper(*args,**kwargs):
+#         locator = args[0]
+#         wait = WebdriverWait(driver,20)
+#         v = _visibility_of_element_located(locator)
+#         wait.until(v)
+#         return func(*args,**kwargs)
+#     return wrapper
+#
+# @Wait
+# def click_text(locator):
+#     driver.find_element(*locator).click()
+#
+# @wait
+# def enter_element(locator,value):
+#     driver.find_element(*locator).send_keys(value)
+#
+# @wait
+# def select_item(locator,item)
+# element=driver.find_element(locator)
+# s=Select(element)
+# if isinstance(item,str)
+#     s.select_by_visible_text(item)
+#     if isinstance(item,int):
+#         s.select _visibility_of_element_index(select_item)
+#     else:
+#         raise TypeError
 
 
