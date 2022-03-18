@@ -53,9 +53,9 @@
 #     if ('0'<= char <='9'):
 #         print(char,end=" "
 
-
-s='123678#$%#%^&*'
-count=0
-for char in s:
-    if char.isalnum():
-    print(char,end=" ")
+#
+# s='123678#$%#%^&*'
+# count=0
+# for char in s:
+#     if char.isalnum():
+#     print(char,end=" ")

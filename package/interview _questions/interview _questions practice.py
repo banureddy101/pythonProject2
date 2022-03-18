@@ -70,14 +70,19 @@
 
 '''8write program to convert upper case to lower case and vice-versa without using inbuilt method'''
 
-# char='HELLO WORLD'
+# char='HELLO world'
 #
 # for item in char:
 #     if 'a'<=item<='z':
-#         print(f'{char} is lower char',end='')
+#         print(chr(ord(item)-32),end='')
 #     elif 'A'<=item<='Z':
-#         print(f'{char} is upper char',end='')
+#         print(chr(ord(item)+32),end='')
 
+# for i in char:
+#     if 'A'<= i <='Z':
+#         print(chr(ord(i)+32))
+#     elif 'a'<= i <='z':
+#         print(chr(ord(i)-32))
 
 '''9. Write program to swap two numbers without using 3rd variable.'''
 # a=10
@@ -365,7 +370,7 @@
 # d={i:len(i) for i in names if len(i)%2 == 0}
 # print(d)
 
-#37Squares of numbers using map
+'''37 Squares of numbers using map'''
 # map is used to map a function with a iterable
 # a = [1, 2, 3, 4, 5]
 # def sqr(args):
@@ -379,7 +384,7 @@
 #     print(i)
 
 
-#38#Write a Program to print the sum of entire list and sum of only internal list
+'''38 Write a Program to print the sum of entire list and sum of only internal list'''
 
 # l = [[1,2,3],[4,5,6],[7,8,9]]
 # sum_internal = [sum(i) for i in l]
@@ -387,7 +392,7 @@
 # i=[[1,2,3],[4,5,6],[7,8,9]]
 # print(i)
 
-#39Write a program to reverse the list as below
+'''39 Write a program to reverse the list as below'''
 
 # words = ["hi", "hello", "python"]
 # #o/p ['nohtyp', 'olleh', 'ih']#
@@ -415,12 +420,17 @@
 
 '''42 write a Program to print the number of occurrences of characters in a String without using inbuilt functions.'''
 
-s = 'helloworld'
+# s = 'helloworld'
 # d={}
 # for i in s:
 #     d[i]=s.count(i)
 # print(d)
-#
+# count = 0
+# for i in s:
+#     count += 1
+# print(count)
+
+
 # from collections import defaultdict
 # d=defaultdict(int)
 # for i in s:
@@ -436,7 +446,7 @@ s = 'helloworld'
 # s = 'helloworld'
 # d={}
 # for i in s:
-#     if s.count(i) == 1:
+#     if s.count(i) != 1:
 #         d[i]=s.count(i)
 # print(d)
 
@@ -484,11 +494,12 @@ s = 'helloworld'
 '''Write a program to find the duplicate elements in the list without using inbuilt functions'''
 
 # names = ['apple', 'google', 'apple', 'yahoo', 'google']
-# uniq =set(names)
-# count = 0
-# for i in uniq:
-#     if i == uniq:
-#count+ = 1
+# d = {}
+# for i in names:
+#     if names.count(i) != 1:
+#         d[i] = names.count(i)
+# print(d)
+        # print(i)
 
 '''_49 Write a program to count the number occurrences of each item in the list without using any inbuilt functions'''
 
@@ -516,7 +527,7 @@ s = 'helloworld'
 # largest=0
 # for i in numbers:
 #     if i > largest:
-#         largest == i
+#         largest += 1
 # print(i)
 
 '''53Write a method that returns the last digit of an integer. For example, the call of get_last_digit(3572) should return 2.
@@ -629,7 +640,7 @@ print(f'{pat:^10}')'''
 
 '''59Write a program to rotate items of the list'''
 # names = ["apple", "google", "yahoo", "gmail", "facebook", "flipkart", "amazon"]
-# from collections import deque
+from collections import deque
 # def rotate_(rotate,n):
 #     d=deque(rotate)
 #     d.rotate(n)
@@ -1115,8 +1126,8 @@ import re
 #             _count += line.count(word)
 #     return _count
 # print(count_words())
-path=r'C:\Users\pc\PycharmProjects\pythonProject2\package\interview _questions\sample.txt'
-'''102 Write a program to count the number of occurrences of vowels in a file.'''
+# path=r'C:\Users\pc\PycharmProjects\pythonProject2\package\interview _questions\sample.txt'
+# '''102 Write a program to count the number of occurrences of vowels in a file.'''
 # with open(path) as file:
 #     # count=0
 #     for line in file:
@@ -1129,15 +1140,15 @@ path=r'C:\Users\pc\PycharmProjects\pythonProject2\package\interview _questions\s
 #                         count +=1
 #                     print(count,end=',')
 
-from collections import defaultdict
-d = defaultdict(int)
-with open(path) as file:
-    for line in file:
-        for word in line.split():
-            for item in word:
-                if item.lower() in 'aeiou':
-                    d[item] += 1
-print(d)
+# from collections import defaultdict
+# d = defaultdict(int)
+# with open(path) as file:
+#     for line in file:
+#         for word in line.split():
+#             for item in word:
+#                 if item.lower() in 'aeiou':
+#                     d[item] += 1
+# print(d)
 
 
 ''' 103 Write a program to count the number of occurrences of each word in a file.'''

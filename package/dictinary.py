@@ -173,6 +173,3 @@ list_=s.split()
 
 
 
-char='pthon'
-str='happy days'
-if
