@@ -328,7 +328,7 @@
 # sq=[res(i) for i in a]
 # print(sq)
 
-#34 Write a function that accepts two strings and returns True if the two strings are anagrams of each other.
+'''34 Write a function that accepts two strings and returns True if the two strings are anagrams of each other.'''
 # def anagrams_(str1,str2):
 #     if str1.upper() == str2.upper():
 #         return False
@@ -344,7 +344,7 @@
 
 
 
-#35 write a program to iterate through list and build a new list, only if the items of the list has even number of characters.
+'''35 write a program to iterate through list and build a new list, only if the items of the list has even number of characters.'''
 # names = ['apple', 'yahoo', 'google', 'gmail', 'walmart', 'flipkart', 'facebook', 'amazon']
 # l = [i for i in names if len(i)%2 == 0]
 # print(l)
@@ -356,7 +356,7 @@
 #         l.append(i)
 # print(l,end='')
 
-#36Write a program to iterate through list and build a new dictionary, only if the items of the list has even number of characters.
+'''36 Write a program to iterate through list and build a new dictionary, only if the items of the list has even number of characters.'''
 # names=['apple', 'yahoo', 'google', 'gmail', 'walmart', 'flipkart', 'facebook', 'amazon']
 
 # d = {}
@@ -394,8 +394,8 @@
 
 '''39 Write a program to reverse the list as below'''
 
-# words = ["hi", "hello", "python"]
-# #o/p ['nohtyp', 'olleh', 'ih']#
+words = ["hi", "hello", "python"]
+#o/p ['nohtyp', 'olleh', 'ih']#
 # for i in range(len(words)-1,-1,-1):
 #     print(words[i][::-1],end=',')
 
@@ -403,7 +403,7 @@
 # for i in words[::-1]:
 #     print(list(i[::-1]))
 
-'''40Write a program to update the tuple'''
+'''40 Write a program to update the tuple'''
 
 # t1 = (1, 2, 3, 4)
 # t2 = (100, 200, 300)
@@ -411,7 +411,7 @@
 # t= t1 +t2
 # print(t)
 
-'''41Print all the numbers in the below list'''
+'''41 Print all the numbers in the below list'''
 
 # a = ['abc', '123', 'hello', '23']
 # for i in a:
@@ -450,7 +450,7 @@
 #         d[i]=s.count(i)
 # print(d)
 
-'''44Write a program to get alternate characters of a string in list format.'''
+'''44 Write a program to get alternate characters of a string in list format.'''
 # s = 'hello world welcome to python'
 # for i in s[::2]:
 #     print(list(i),end='')
@@ -465,7 +465,8 @@
 # sqr = [res(i) for i in a]
 # print(sqr)
 
-'''46Grouping anagrams'''
+
+'''46 Grouping anagrams'''
 # words = ['eat', 'ate', 'tea', 'hello', 'silent', 'listen']
 # from collections import defaultdict
 # d= defaultdict(list)
@@ -473,6 +474,7 @@
 #     s=''.join(sorted(i))
 #     d[s].append(i)
 # print(d)
+
 
 '''46 Write a list comprehension to get a list of even numbers from 1-50'''
 
@@ -487,7 +489,7 @@
 # l =s.split()
 # d={}
 # for i in l:
-#     if s.count(i) == 1:
+#     if l.count(i) == 1:
 #         d[i]=len(i)
 # print(d)
 
@@ -503,11 +505,17 @@
 
 '''_49 Write a program to count the number occurrences of each item in the list without using any inbuilt functions'''
 
-# names =['apple', 'google', 'apple', 'yahoo', 'google', 'facebook', 'gmail', 'yahoo']
+names =['apple', 'google', 'apple', 'yahoo', 'google', 'facebook', 'gmail', 'yahoo']
 # d={}
 # for i in names:
-#     d[i]=names.count(i)
-# print(list(d))
+#     d=names.count(i)
+#     print((i,d))
+# from collections import defaultdict
+# d = defaultdict(int)
+# for i in names:
+#     d[i] += 1
+# print(
+#     d)
 
 '''50Write a function to check if the number is Prime'''
 
